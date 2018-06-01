@@ -4,14 +4,10 @@
 var ReasonReact = require("reason-react/src/ReasonReact.js");
 var ReactSvgMorph = require("react-svg-morph");
 
-function make(width, height, duration, viewBox, rotation, preserveAspectRatio, children) {
+function make(width, height, children) {
   return ReasonReact.wrapJsForReason(ReactSvgMorph.MorphReplace, {
               width: width,
-              height: height,
-              duration: duration,
-              viewBox: viewBox,
-              rotation: rotation,
-              preserveAspectRatio: preserveAspectRatio
+              height: height
             }, children);
 }
 

@@ -1,1 +1,1 @@
-ReactDOMRe.renderToElementWithId(<Freysi />, "main");
+ReactDOMRe.renderToElementWithId(<MorphWrap />, "main");

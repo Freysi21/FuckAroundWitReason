@@ -6,19 +6,19 @@ module MorphReplace = {
   type jsProps = {
     width: int,
     height: int,
-    duration: int,
-    viewBox: string,
-    rotation: string,
-    preserveAspectRatio: string,
+    /*duration: int,
+      viewBox: string,
+      rotation: string,
+      preserveAspectRatio: string,*/
   };
   let make =
       (
         ~width,
         ~height,
-        ~duration,
-        ~viewBox,
-        ~rotation,
-        ~preserveAspectRatio,
+        /*~duration,
+          ~viewBox,
+          ~rotation,
+          ~preserveAspectRatio,*/
         children,
       ) =>
     ReasonReact.wrapJsForReason(
@@ -27,10 +27,10 @@ module MorphReplace = {
         jsProps(
           ~width,
           ~height,
-          ~duration,
-          ~viewBox,
-          ~rotation,
-          ~preserveAspectRatio,
+          /*~duration,
+            ~viewBox,
+            ~rotation,
+            ~preserveAspectRatio,*/
         ),
       children,
     );
